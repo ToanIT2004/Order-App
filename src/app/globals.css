@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Loại bỏ mũi tên của navbar phần menu */
+.dropdown-toggle::after {
+  display: none !important;
+}

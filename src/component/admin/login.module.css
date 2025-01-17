@@ -1,0 +1,110 @@
+.loginContainer {
+   background-color: #f8f9fa;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.loginCard {
+   background: white;
+   padding: 40px;
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   max-width: 490px;
+   width: 100%;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 24px;
+   color: #333;
+   margin-bottom: 24px;
+   text-align: center;
+}
+
+.formGroup {
+   margin-bottom: 20px;
+}
+
+.formLabel {
+   font-weight: 500;
+   color: #555;
+   margin-bottom: 8px;
+}
+
+.formControl {
+   padding: 12px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   width: 100%;
+   font-size: 14px;
+   transition: border-color 0.2s;
+}
+
+.formControl:focus {
+   border-color: #0d6efd;
+   box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+   outline: none;
+}
+
+.submitButton {
+   width: 40%;
+   padding: 12px;
+   font-size: 14px;
+   font-weight: 500;
+   border-radius: 50px;
+   display: block;
+   margin: 30px auto 0;
+   background: #0d6efd;
+   border: none;
+   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submitButton:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.icon {
+   font-size: 60px;
+   color: #0d6efd;
+   text-align: center;
+   margin: 0 auto 30px;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(13, 110, 253, 0.1);
+   border-radius: 50%;
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+.icon::after {
+   content: '';
+   position: absolute;
+   width: 90px;
+   height: 90px;
+   border: 2px dashed #0d6efd;
+   border-radius: 50%;
+   animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.icon:hover {
+   cursor: pointer;
+   transform: scale(1.05);
+   box-shadow: 0 0 20px rgba(13, 110, 253, 0.2);
+}
